@@ -1,0 +1,96 @@
+name: investment_tracker
+description: "InvestTrack - Your intelligent portfolio management companion"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  
+  # State Management
+  flutter_riverpod: ^3.0.3
+  riverpod_annotation: ^3.0.3
+  
+  # Networking
+  dio: ^5.9.0
+
+  # Charts
+  fl_chart: ^1.1.1
+
+  # Local Storage
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # Secure Storage
+  flutter_secure_storage: ^9.2.4
+
+  # Navegación
+  go_router: ^14.6.2
+  
+  # Toasts/Snackbars bonitos
+  fluttertoast: ^8.2.8
+
+  # Google Fonts
+  google_fonts: ^6.2.1
+
+  # Code Generation
+  json_annotation: ^4.9.0
+
+  # Internationalization
+  intl: ^0.20.2
+
+  # Local Notifications
+  flutter_local_notifications: ^18.0.1
+  timezone: ^0.9.4
+
+  # Dependency Injection
+  get_it: ^8.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Linting
+  flutter_lints: ^6.0.0
+
+  # Code Generation
+  build_runner: ^2.4.0
+  json_serializable: ^6.8.0
+  riverpod_generator: ^3.0.3
+  riverpod_lint: ^3.0.3
+
+  # Launcher Icons
+  flutter_launcher_icons: ^0.14.2
+
+  # Testing
+  mockito: ^5.4.4
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/logo.png
+    - assets/adaptive-icon.png
+    - assets/ios-light.png
+    - assets/ios-dark.png
+    - assets/ios-tinted.png
+    - assets/splash-icon-light.png
+    - assets/splash-icon-dark.png
+
+# Configuración de iconos de lanzador
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/adaptive-icon.png"
+  remove_alpha_ios: true
+
+  # Android adaptive icon
+  adaptive_icon_foreground: "assets/adaptive-icon.png"
+  adaptive_icon_background: "#FFFFFF"

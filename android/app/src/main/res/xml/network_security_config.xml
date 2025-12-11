@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <!-- Trust preinstalled CAs -->
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+
+    <!-- Permitir conexiones HTTPS a tu servidor de Koyeb -->
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">scrawny-lilly-investment-tracker-0945c86b.koyeb.app</domain>
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </domain-config>
+</network-security-config>
